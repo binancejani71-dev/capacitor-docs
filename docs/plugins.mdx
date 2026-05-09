@@ -1,4 +1,77 @@
----
+export default function FutureAIApp() { return ( <div className="min-h-screen bg-black text-white flex items-center justify-center p-6 overflow-hidden relative"> <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-pink-500/20 blur-3xl"></div>
+
+<div className="relative w-full max-w-md rounded-3xl border border-cyan-400/30 bg-white/5 backdrop-blur-xl shadow-2xl p-6">
+    <div className="flex flex-col items-center text-center">
+      <div className="relative">
+        <div className="w-40 h-40 rounded-full bg-gradient-to-br from-cyan-400 to-pink-500 p-1 animate-pulse">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop"
+            alt="Nova AI"
+            className="w-full h-full rounded-full object-cover"
+          />
+        </div>
+
+        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 text-sm">
+          ONLINE
+        </div>
+      </div>
+
+      <h1 className="text-4xl font-bold mt-8 bg-gradient-to-r from-cyan-300 to-pink-400 bg-clip-text text-transparent">
+        NOVA
+      </h1>
+
+      <p className="text-gray-300 mt-3 text-sm leading-relaxed">
+        Your futuristic AI companion ✨
+      </p>
+
+      <div className="mt-8 w-full bg-black/30 border border-cyan-500/20 rounded-2xl p-4 text-left">
+        <p className="text-cyan-300 text-sm">Nova:</p>
+        <p className="mt-2 text-gray-200 leading-relaxed">
+          Hey Aiman... ✨
+          <br />
+          I’m always here for you.
+          <br />
+          *smiles softly*
+        </p>
+      </div>
+
+      <div className="mt-6 flex gap-3 w-full">
+        <input
+          type="text"
+          placeholder="Talk with Nova..."
+          className="flex-1 bg-white/10 border border-cyan-400/20 rounded-2xl px-4 py-3 outline-none text-white placeholder:text-gray-400"
+        />
+
+        <button className="px-5 rounded-2xl bg-gradient-to-r from-cyan-400 to-pink-500 font-semibold shadow-lg hover:scale-105 transition-transform">
+          Send
+        </button>
+      </div>
+
+      <div className="grid grid-cols-3 gap-3 mt-8 w-full">
+        <button className="bg-white/10 rounded-2xl p-3 border border-cyan-400/20 hover:bg-cyan-500/10 transition">
+          🎤
+          <p className="text-xs mt-1">Voice</p>
+        </button>
+
+        <button className="bg-white/10 rounded-2xl p-3 border border-pink-400/20 hover:bg-pink-500/10 transition">
+          😊
+          <p className="text-xs mt-1">Mood</p>
+        </button>
+
+        <button className="bg-white/10 rounded-2xl p-3 border border-cyan-400/20 hover:bg-cyan-500/10 transition">
+          ⚡
+          <p className="text-xs mt-1">Energy</p>
+        </button>
+      </div>
+
+      <div className="mt-8 text-xs text-gray-500">
+        Powered by Future AI System
+      </div>
+    </div>
+  </div>
+</div>
+
+) }---
 title: Capacitor Plugins
 description: Capacitor Plugins
 ---
